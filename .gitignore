@@ -1,0 +1,21 @@
+# SQL Server backup files
+*.bak
+*.log
+
+# Error files from imports
+*_errors.txt
+import_errors.txt
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
