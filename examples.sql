@@ -96,8 +96,11 @@ Python Example (using pyodbc)
 import pyodbc
 
 # Connection string
+# Note: Check available ODBC drivers with: pyodbc.drivers()
+# Common driver names: 'ODBC Driver 17 for SQL Server', 'ODBC Driver 18 for SQL Server', 
+# 'SQL Server', 'SQL Server Native Client 11.0'
 conn_str = (
-    'DRIVER={ODBC Driver 17 for SQL Server};'
+    'DRIVER={ODBC Driver 17 for SQL Server};'  # Update if you have a different driver version
     'SERVER=localhost;'
     'DATABASE=AustralianPlaces;'
     'Trusted_Connection=yes;'

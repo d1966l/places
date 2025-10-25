@@ -8,12 +8,18 @@ PRINT '=== Test 1: Database Existence ===';
 IF EXISTS (SELECT name FROM sys.databases WHERE name = 'AustralianPlaces')
     PRINT '✓ Database "AustralianPlaces" exists';
 ELSE
+BEGIN
     PRINT '✗ Database "AustralianPlaces" does NOT exist';
+    PRINT 'Please run schema.sql first to create the database.';
+    RETURN;
+END
 PRINT '';
+
+-- Use the database (only if it exists)
+USE AustralianPlaces;
 
 -- Test 2: Check if table exists
 PRINT '=== Test 2: Table Existence ===';
-USE AustralianPlaces;
 IF OBJECT_ID('dbo.Places', 'U') IS NOT NULL
     PRINT '✓ Table "Places" exists';
 ELSE
