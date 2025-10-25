@@ -36,6 +36,8 @@ This repository contains a comprehensive dataset of Australian cities and towns 
 - **schema.sql** - Database schema creation script
 - **import_data.sql** - Data import script
 - **queries.sql** - Sample SQL queries
+- **test_connection.sql** - Database connection and setup verification script
+- **examples.sql** - Code examples in C#, Python, Node.js, and PowerShell
 - **setup.ps1** - Automated setup script for Windows
 - **setup.sh** - Automated setup script for Linux/Mac
 - **QUICKSTART.md** - Quick reference guide
@@ -49,6 +51,17 @@ This repository contains a comprehensive dataset of Australian cities and towns 
 - State/territory information
 - Postal codes
 - Indexed for optimal query performance
+
+## Verifying Your Setup
+
+After installation, run the test script to verify everything is working:
+
+```sql
+-- Execute test_connection.sql in SSMS or Azure Data Studio
+-- This will verify database, tables, data, and indexes
+```
+
+Or use the automated setup scripts which include verification.
 
 ## Data Fields
 
