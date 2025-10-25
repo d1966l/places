@@ -4,7 +4,7 @@ A geodatabase of Australian cities and towns with MSSQL database support.
 
 ## Overview
 
-This repository contains a comprehensive dataset of Australian cities and towns that can be imported into Microsoft SQL Server (MSSQL) running on localhost.
+This repository contains a comprehensive dataset of Australian cities and towns that can be imported into Microsoft SQL Server (MSSQL) on localhost.
 
 ## Quick Start
 
